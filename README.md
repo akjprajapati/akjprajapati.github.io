@@ -1,32 +1,13 @@
-#Exemplar
+# Thinkspace v2.1
 
-This is my jekyll site template. Used for blog and project pages.
+Thinkspace is just another minimalist Jekyll theme which is best suit for technical writing, but not limited to. Good for personal blog type too or project-based blog. Disqus comment is included.
 
-#Getting Started
+[**Live Demo**](http://heiswayi.github.io/thinkspace/)
 
-First, make sure you have the `jekyll` and `sass` gems installed. In your terminal run:
+### Screenshot
 
-    gem install jekyll
-    gem install sass
+![Thinkspace Screenshot](http://i.imgur.com/IMQDB9e.png)
 
-You can optionally install the *bourbon* gem in order to update the Bourbon folder:
+### License
 
-    gem install bourbon
-    cd _sass
-    bourbon install
-
-Start running Jekyll (defaults to port 4000) and watching Sass:
-
-    rake // 'rake watch' also works
-
-Before deploying your site, stop `rake watch` and run `rake generate` to generate a production-ready site (no Scss comments).
-
-## Updating Bourbon
-
-In order to update the Bourbon folder:
-
-    cd _sass/
-    bourbon update
-    
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tybenz/exemplar/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[MIT](LICENSE.md)
