@@ -1,77 +1,68 @@
-# Lagom
+# OpenTheme
 
-> #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
+Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
 
-Lagom, a [Jekyll][j] blog theme with just the right amount of style. 
+## Getting Started
 
-Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
+### Fork and Publish Direct from GitHub
 
+1. Fork OpenTheme as your own repo
+2. IMPORTANT: Edit _config.yml -> "API Keys" section to replace OpenTheme keys with your own
+3. Edit and publish _posts, or _data, or pages directly from GitHub
 
+### Local Setup
 
-* Responsive, based on [Skeleton][skeleton]
-* [Font Awesome][font-awesome] for icons
-* Open Sans from [Google web fonts][gfonts]
-* Built-in Atom feed
+```
+bundle install # Install Jekyll, Github Pages gems
+npm install # Install Gulp and dependences
+gulp # Build, test, serve and watch your local setup
+```
 
-[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](http://lagom.mdswanson.com/)
+IMPORTANT: Edit **_config.yml** -> "API Keys" section to replace OpenTheme keys with your own
 
-## Action Shots
-![](http://i.imgur.com/Pmzk4j1.png)
-![](http://i.imgur.com/CT2Xvug.png)
-![](http://i.imgur.com/XisjqW1.jpg)
+Optionally edit **gulpfile.js** -> BrowserSync host, port to your local setup
 
-## Installation
+Optionally, helper bash scripts available in **/scripts** folder. Use **shove.sh** to push changes to your repo. Use **clone.sh** to copy changes to GitHub Pages.
 
-- [Fork this repository][fork]
-- Clone it: `git clone https://github.com/YOUR-USER/lagom`
-- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
-- Run the jekyll server: `jekyll serve`
+## File Structure
 
-You should have a server up and running locally at <http://localhost:4000>.
+### Folders Pre-processed by GitHub Pages / Jekyll
 
-## Customization
+- **_includes** html partials reusable in layouts.
+- **_layouts** html layouts reusable in pages. 
+- **_posts** Post types organized by folder. **apps** contains single page apps. **blog** contains blog posts.
+- **_data** Static data files including YAML Front Matter, CSV, JSON formats usable by GitHub Pages sites.
 
-Next you'll want to change a few things. Most of them can be changed directly in
-[theme.yml][config]. That's where you can add your social links, change the accent
-color, stuff like that.
+### Asset Folders
 
-There's a few other places that you'll want to change, too:
+- **js** add site specific JavaScript to custom.js. Vendor libraries are added as minified where available.
+- **css** add site specific CSS to custom.css. Vendor libraries are added as minified where available. Contains folders for assets referenced by custom or vendor css.
+- **img** image assets.
 
-- [CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
-  you'll want to change this to be the domain you're going to use. All that should 
-  be in here is a domain name on the first line and nothing else (like: `example.com`).
-- [favicon.png][favicon]: This is the icon in your browser's address bar. You should 
-  change it to whatever you'd like.
-- [logo.png][logo]: A square-ish image that appears in the upper-left corner
+### Development Automation
 
-## Deployment
+- **script** Automation shell scripts for development, testing. [TO DO] Replace with Gulp pipeline automation, E2E, Lint tests.
 
-You should deploy with [GitHub Pages][pages] - it's just easier.
+### Files
 
-All you should have to do is rename your repository on GitHub to be
-`username.github.io`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.io>.
+- **Gemfile** defines gems required for creating local Jekyll building and serving "like" how GitHub Pages would.
 
-## Licensing
+## Dependencies
 
-[MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
-me or using a disclaimer or anything silly like that.
+- Semantic UI
+- Jekyll
 
-## Contact
-I'd love to hear from you at [@_swanson][twitter]. Feel free to open issues if you
-run into trouble or have suggestions. Pull Requests always welcome.
+## Reference Projects
 
-[j]: http://jekyllrb.com/
-[mds]: http://mdswanson.com
-[skeleton]: http://www.getskeleton.com/
-[font-awesome]: http://fortawesome.github.io/Font-Awesome/
-[gfonts]: http://www.google.com/fonts/specimen/Open+Sans
-[fork]: https://github.com/swanson/lagom/fork
-[config]: https://github.com/swanson/lagom/blob/master/_data/theme.yml
-[cname]: https://github.com/swanson/lagom/blob/master/CNAME
-[favicon]: https://github.com/swanson/lagom/blob/master/favicon.png
-[logo]: https://github.com/swanson/lagom/blob/master/logo.png
-[pages]: http://pages.github.com
-[twitter]: https://twitter.com/_swanson
-[pages]: https://github.com/github/pages-gem
+Study following projects for best practices.
+
+### Jekyll built sites and themes
+
+- [Jekyll website](http://jekyllrb.com/)
+- GitHub Pages themes
+- [Lanyon](https://github.com/poole/lanyon)
+- [Jekyll Themes](http://jekyllthemes.org/)
+
+### GitHub hosted sites
+
+- [Semantic UI website](http://www.semantic-ui.com)
