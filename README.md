@@ -1,68 +1,116 @@
-# OpenTheme
+[![Material Design for Bootstrap](https://mdbootstrap.com/wp-content/uploads/2018/01/blog-homepage.jpg)](https://mdbootstrap.com/freebies/blog-template/)
 
-Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
+# Bootstrap 4 & Material Design - Blog Template 
 
-## Getting Started
+Free, responsive Blog template containing many types of engaging posts, author pages, and category pages. Designed for storytellers. Built with the newest Bootstrap 4 and Material Design. MIT license – free for personal and commercial use.
 
-### Fork and Publish Direct from GitHub
+________
 
-1. Fork OpenTheme as your own repo
-2. IMPORTANT: Edit _config.yml -> "API Keys" section to replace OpenTheme keys with your own
-3. Edit and publish _posts, or _data, or pages directly from GitHub
+# Live Previews: 
+## https://mdbootstrap.com/freebies/blog-template/
 
-### Local Setup
+# Most important features:
 
-```
-bundle install # Install Jekyll, Github Pages gems
-npm install # Install Gulp and dependences
-gulp # Build, test, serve and watch your local setup
-```
+1. Fully responsive
 
-IMPORTANT: Edit **_config.yml** -> "API Keys" section to replace OpenTheme keys with your own
+2. Plenty of useful components
 
-Optionally edit **gulpfile.js** -> BrowserSync host, port to your local setup
+3. Easy installation
 
-Optionally, helper bash scripts available in **/scripts** folder. Use **shove.sh** to push changes to your repo. Use **clone.sh** to copy changes to GitHub Pages.
+4. Easy to use and customize
 
-## File Structure
+5. Active community
 
-### Folders Pre-processed by GitHub Pages / Jekyll
+6. Dedicated support forum
 
-- **_includes** html partials reusable in layouts.
-- **_layouts** html layouts reusable in pages. 
-- **_posts** Post types organized by folder. **apps** contains single page apps. **blog** contains blog posts.
-- **_data** Static data files including YAML Front Matter, CSV, JSON formats usable by GitHub Pages sites.
+7. Detailed documentation
 
-### Asset Folders
+# Demo:  
+**Main demo**: https://mdbootstrap.com/previews/free-templates/blog/home-page.html
 
-- **js** add site specific JavaScript to custom.js. Vendor libraries are added as minified where available.
-- **css** add site specific CSS to custom.css. Vendor libraries are added as minified where available. Contains folders for assets referenced by custom or vendor css.
-- **img** image assets.
+# MDB Quick Start (5 minutes):
+**Written Tutorial**: https://mdbootstrap.com/mdb-quick-start/
 
-### Development Automation
+**Video Tutorial**:https://www.youtube.com/watch?v=cXTThxoywNQ&t=9s
 
-- **script** Automation shell scripts for development, testing. [TO DO] Replace with Gulp pipeline automation, E2E, Lint tests.
+**npm installation**
+You can install MDBootstrap using NPM:
+- `npm install mdbootstrap`
 
-### Files
+# Additional tutorials:
 
-- **Gemfile** defines gems required for creating local Jekyll building and serving "like" how GitHub Pages would.
+**MDB - Bootstrap tutorial**: https://mdbootstrap.com/bootstrap-tutorial/
 
-## Dependencies
+**MDB - Wordpress tutorial**: https://mdbootstrap.com/wordpress-tutorial/
 
-- Semantic UI
-- Jekyll
+# Documentation:
 
-## Reference Projects
+**Huge, detailed documentation avilable online on**: https://mdbootstrap.com/
 
-Study following projects for best practices.
+# PRO version:
 
-### Jekyll built sites and themes
+**MDB Blog Template Pro (jQuery version)**: https://mdbootstrap.com/product/blog-theme/  
 
-- [Jekyll website](http://jekyllrb.com/)
-- GitHub Pages themes
-- [Lanyon](https://github.com/poole/lanyon)
-- [Jekyll Themes](http://jekyllthemes.org/)
+# Highlights:  
+**Bootstrap 4**  
+Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.
 
-### GitHub hosted sites
+**Material Design for Bootstrap**  
+This template is built with MDBootstrap - powerful and free UI Kit, containing 400+ material UI elements, 600+ material icons, 74 CSS animations, SASS files, templates, tutorials and many more.  
 
-- [Semantic UI website](http://www.semantic-ui.com)
+**Free for personal and commercial use**  
+Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.   
+
+**10 fresh ready to use templates**  
+We are going further and giving to you ready to use templates! Use them as you like, as an inspiration, prototype or final product for your customers.  
+
+**Fully responsive**  
+It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB looks great on each screen.
+
+**Technical support**  
+We really care about reliability. If you have any questions - do not hesitate to contact us.  
+
+**Active community**  
+Our society grows day by day. Visit **our forum** and check how it is to be a part of our family.  
+
+**Flex box**  
+MDB fully suppports Flex Box. You can forget about alignment issues.  
+
+**Latest jQuery**  
+MDB is integrated with newest jQuery, therefore you can use all the newest features which comes along with it.  
+
+**Detailed documentation:**  
+We give you detailed documentation at your disposal. It will help you to implement your ideas easily.  
+
+A big **thank you to all our users** who are working with us to improve the software. We wouldn't be where we are without you.  
+
+# Useful Links:  
+
+Getting started: https://mdbootstrap.com/getting-started/  
+
+5 min quick start: https://mdbootstrap.com/mdb-quick-start/  
+
+Material Design + Bootstrap Tutorial: https://mdbootstrap.com/bootstrap-tutorial/  
+
+Material Design + WordPress Tutorial: https://mdbootstrap.com/wordpress-tutorial/  
+
+Other Freebies: https://mdbootstrap.com/freebies/  
+
+Premium Templates: https://mdbootstrap.com/templates/  
+
+
+# Social Media:  
+
+Twitter: https://twitter.com/MDBootstrap  
+
+Facebook: https://www.facebook.com/mdbootstrap  
+
+Pinterest: https://pl.pinterest.com/mdbootstrap 
+
+Google+: https://plus.google.com/u/0/b/107863090883699620484/+Mdbootstrap/posts  
+
+Dribbble: https://dribbble.com/mdbootstrap
+
+LinkedIn: https://www.linkedin.com/company/material-design-for-bootstrap
+
+# Visit our website: https://mdbootstrap.com/
