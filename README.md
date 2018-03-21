@@ -1,68 +1,115 @@
-# OpenTheme
+Unfortunately, this project is **no longer maintained**.
 
-Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
+I now have other priorities in my life and no longer have time to update this library. Email me at elle.kasai@gmail.com if you'd like to reach me.
 
-## Getting Started
+# :briefcase: ResumeCards :briefcase:
 
-### Fork and Publish Direct from GitHub
+ResumeCards is a Markdown based resume generator. It looks great on mobile/desktop and can be saved as PDF.
 
-1. Fork OpenTheme as your own repo
-2. IMPORTANT: Edit _config.yml -> "API Keys" section to replace OpenTheme keys with your own
-3. Edit and publish _posts, or _data, or pages directly from GitHub
+## :briefcase: Live Demo :briefcase:
 
-### Local Setup
+### [View Demo and Documentation](http://ellekasai.github.io/resumecards)
+
+![](http://cl.ly/image/3O342N0b0y1h/sample_default.png)
+
+You can save it as PDF too:
+
+![](http://cl.ly/image/091w0b0M2S3G/resume_print_preview.png)
+
+## :briefcase: Installation :briefcase:
+
+**Note:** ResumeCards uses Jekyll. Please read [Jekyll's documentation](http://jekyllrb.com/) if you get stuck.
+
+[Fork this repo](http://github.com/ellekasai/resumecard/fork), clone it, and then run:
 
 ```
-bundle install # Install Jekyll, Github Pages gems
-npm install # Install Gulp and dependences
-gulp # Build, test, serve and watch your local setup
+bundle install
 ```
 
-IMPORTANT: Edit **_config.yml** -> "API Keys" section to replace OpenTheme keys with your own
+...which installs `github-pages` gem. After that, run the server:
 
-Optionally edit **gulpfile.js** -> BrowserSync host, port to your local setup
+```
+jekyll serve --watch
+```
+### Warning
 
-Optionally, helper bash scripts available in **/scripts** folder. Use **shove.sh** to push changes to your repo. Use **clone.sh** to copy changes to GitHub Pages.
+* Once the server is started, you must go to [http://localhost:4000/resumecards/](http://localhost:4000/resumecards/), since `baseurl` is set as `"/resumecards"` initially. To use  http://localhost:4000/, change `baseurl` in `_config.yml` to `""` .
 
-## File Structure
+## :briefcase: Usage :briefcase:
 
-### Folders Pre-processed by GitHub Pages / Jekyll
+### Editing Your Resume
 
-- **_includes** html partials reusable in layouts.
-- **_layouts** html layouts reusable in pages. 
-- **_posts** Post types organized by folder. **apps** contains single page apps. **blog** contains blog posts.
-- **_data** Static data files including YAML Front Matter, CSV, JSON formats usable by GitHub Pages sites.
+Edit `_posts/card-[1-9].md` like this:
 
-### Asset Folders
+```markdown
+---
+type: "Work Experience"
+heading: "Bizreach"
+subheading: "Junior Product Designer"
+duration: "October 2013 – September 2014 (1 year)"
+location: "Tokyo, Japan"
+---
 
-- **js** add site specific JavaScript to custom.js. Vendor libraries are added as minified where available.
-- **css** add site specific CSS to custom.css. Vendor libraries are added as minified where available. Contains folders for assets referenced by custom or vendor css.
-- **img** image assets.
+Write in markdown here...
+```
 
-### Development Automation
+If you don't need some of the metadata, just remove them:
 
-- **script** Automation shell scripts for development, testing. [TO DO] Replace with Gulp pipeline automation, E2E, Lint tests.
+```markdown
+---
+type: "Work Experience"
+heading: "Bizreach"
+---
+```
 
-### Files
+### Other Files to Modify
 
-- **Gemfile** defines gems required for creating local Jekyll building and serving "like" how GitHub Pages would.
+You **should** change these files before deploying:
 
-## Dependencies
+* `_config.yml`: You must change `baseurl`and `url`.
+  * Make sure to restart the server after you update `_config.yml`.
+* `_data/resume.yml`: You must change `photo`, `name` and `url`. Also, you must set `demo` to `false` to hide everything but your resume.
+* `CNAME`: Change this to host ResumeCards on a custom domain.
+* `README.md`: Write your own README!
+* `_includes/script.html`: Extra stuff before the `</body>` tag. Change or remove the default Google Analytics code.
+* `_includes/nav.html`: Modify or remove your contact links.
 
-- Semantic UI
-- Jekyll
+### Customize the Theme
 
-## Reference Projects
+To customize the color theme, edit the `color` section of `_data/resume.yml`.
 
-Study following projects for best practices.
+#### Red
+![](http://cl.ly/image/0Q442g393E0O/sample_red.png)
 
-### Jekyll built sites and themes
+#### Pink
+![](http://cl.ly/image/2r0d3C201Q2y/sample_pink.png)
 
-- [Jekyll website](http://jekyllrb.com/)
-- GitHub Pages themes
-- [Lanyon](https://github.com/poole/lanyon)
-- [Jekyll Themes](http://jekyllthemes.org/)
+#### Brown
+![](http://cl.ly/image/1A3p0v2n2I2O/sample_brown.png)
 
-### GitHub hosted sites
+#### Blue
+![](http://cl.ly/image/102r3e1y010w/sample_blue.png)
 
-- [Semantic UI website](http://www.semantic-ui.com)
+#### Purple
+![](http://cl.ly/image/130Y2y1X1228/sample_purple.png)
+
+#### Teal
+![](http://cl.ly/image/3L042k3L3i2m/sample_teal.png)
+
+#### Green
+![](http://cl.ly/image/031u3a070V3f/sample_green.png)
+
+## :briefcase: Author & License :briefcase:
+
+Elle Kasai
+
+- [Website](http://ellekasai.com/about)
+- [Twitter](http://twitter.com/ellekasai)
+
+[MIT License](http://ellekasai.mit-license.org).
+
+## :briefcase: Special Thanks :briefcase:
+
+* [Shu Uesugi](http://github.com/chibicode) - for the guidance on this project.
+
+
