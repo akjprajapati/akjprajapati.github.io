@@ -1,20 +1,25 @@
-<nav>
-  <h1>Hi.</h1>
-  <a href="/">
-    {% if site.data.theme.social.gravatar %}
-    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
-    {% else %}
-    <img src="/logo.png" id="logo" alt="Blog logo"/>
+{% include base_path %}
+
+{% if page.author_profile or layout.author_profile or page.sidebar %}
+  <div class="sidebar sticky">
+  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.sidebar %}
+    {% for s in page.sidebar %}
+      {% if s.image %}
+        <img src=
+        {% if s.image contains "://" %}
+          "{{ s.image }}"
+        {% else %}
+          "{{ s.image | prepend: "/images/" | prepend: base_path }}"
+        {% endif %}
+        alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+      {% endif %}
+      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+      {% if s.text %}{{ s.text | markdownify }}{% endif %}
+    {% endfor %}
+    {% if page.sidebar.nav %}
+      {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
-  </a>
-  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
-  <div id="bio">
-    <p>A brief bio or something witty.</p>
-    <p>
-      Edit me in <code>_includes/sidebar.html</code>
-    </p>
+  {% endif %}
   </div>
-  <div id="social">
-    {% include social.html %}
-  </div>
-</nav>
+{% endif %}

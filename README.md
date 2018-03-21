@@ -1,77 +1,29 @@
-# Lagom
+A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
 
-> #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
+I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
 
-Lagom, a [Jekyll][j] blog theme with just the right amount of style. 
+# Instructions
 
-Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
+1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
+1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
+1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
+1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
+1. Check status by going to the repository settings, in the "GitHub pages" section
+1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
+See more info at https://academicpages.github.io/
 
+## To run locally (not on GitHub Pages, to serve on your own computer)
 
-* Responsive, based on [Skeleton][skeleton]
-* [Font Awesome][font-awesome] for icons
-* Open Sans from [Google web fonts][gfonts]
-* Built-in Atom feed
+1. Clone the repository and made updates as detailed above
+1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
+1. Run `bundle clean` to clean up the directory (no need to run `--force`)
+1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
 
-[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](http://lagom.mdswanson.com/)
+# Changelog -- bugfixes and enhancements
 
-## Action Shots
-![](http://i.imgur.com/Pmzk4j1.png)
-![](http://i.imgur.com/CT2Xvug.png)
-![](http://i.imgur.com/XisjqW1.jpg)
+There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
 
-## Installation
-
-- [Fork this repository][fork]
-- Clone it: `git clone https://github.com/YOUR-USER/lagom`
-- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
-- Run the jekyll server: `jekyll serve`
-
-You should have a server up and running locally at <http://localhost:4000>.
-
-## Customization
-
-Next you'll want to change a few things. Most of them can be changed directly in
-[theme.yml][config]. That's where you can add your social links, change the accent
-color, stuff like that.
-
-There's a few other places that you'll want to change, too:
-
-- [CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
-  you'll want to change this to be the domain you're going to use. All that should 
-  be in here is a domain name on the first line and nothing else (like: `example.com`).
-- [favicon.png][favicon]: This is the icon in your browser's address bar. You should 
-  change it to whatever you'd like.
-- [logo.png][logo]: A square-ish image that appears in the upper-left corner
-
-## Deployment
-
-You should deploy with [GitHub Pages][pages] - it's just easier.
-
-All you should have to do is rename your repository on GitHub to be
-`username.github.io`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.io>.
-
-## Licensing
-
-[MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
-added caveats, so feel free to use this on your site without linking back to
-me or using a disclaimer or anything silly like that.
-
-## Contact
-I'd love to hear from you at [@_swanson][twitter]. Feel free to open issues if you
-run into trouble or have suggestions. Pull Requests always welcome.
-
-[j]: http://jekyllrb.com/
-[mds]: http://mdswanson.com
-[skeleton]: http://www.getskeleton.com/
-[font-awesome]: http://fortawesome.github.io/Font-Awesome/
-[gfonts]: http://www.google.com/fonts/specimen/Open+Sans
-[fork]: https://github.com/swanson/lagom/fork
-[config]: https://github.com/swanson/lagom/blob/master/_data/theme.yml
-[cname]: https://github.com/swanson/lagom/blob/master/CNAME
-[favicon]: https://github.com/swanson/lagom/blob/master/favicon.png
-[logo]: https://github.com/swanson/lagom/blob/master/logo.png
-[pages]: http://pages.github.com
-[twitter]: https://twitter.com/_swanson
-[pages]: https://github.com/github/pages-gem
+To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
