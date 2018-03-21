@@ -1,78 +1,68 @@
-# Jekyll Template - Mediumish by WowThemes.net
+# OpenTheme
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)
+Powerful new theme featuring Semantic UI for speedily creating amazing websites and mobile-hybrid apps on GitHub Pages.
 
-![mediumish](assets/images/mediumish-jekyll-template.png)
+## Getting Started
 
-### Features
+### Fork and Publish Direct from GitHub
 
-- Built for Jekyll
-- Compatible with Github pages
-- Featured Posts
-- Index Pagination
-- Post Share
-- Post Categories
-- Prev/Next Link
-- Category Archives (this is not yet compatible with github pages though)
-- Jumbotron Categories
-- Integrations:
-    - Disqus Comments
-    - Google Analaytics
-    - Mailchimp Integration
-- Design Features:
-    - Bootstrap v4.0.0-alpha.6
-    - Font Awesome
-    - Masonry
-- Layouts:
-    - Default
-    - Post
-    - Page
-    - Archive
-    
-### Using Mediumish
+1. Fork OpenTheme as your own repo
+2. IMPORTANT: Edit _config.yml -> "API Keys" section to replace OpenTheme keys with your own
+3. Edit and publish _posts, or _data, or pages directly from GitHub
 
-- Open <code>_config.yml</code>. If your site is in root, for <code>baseurl</code>, make sure this is set to <code>baseurl: /</code>. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
-- Mediumish requires 2 plugins: 
-    - <code>$ gem install jekyll-paginate</code>
-    - <code>$ gem install jekyll-archives</code>.
-- Edit the menu and footer copyrights in <code>default.html</code>
-- Start by adding your .md files in <code>_posts</code>. Mediumish already has a few as an example. 
-- YAML front matter
-    - post featured - <code>featured:true</code>
-    - post featured image - <code>image: assets/images/mypic.jpg</code>
-    - page comments - <code>comments:true</code>
-    - meta description (optional) - <code>description: "this is my meta description"</code>
-    
-YAML Post Example:
-<pre>
----
-layout: post
-title:  "We all wait for summer"
-author: john
-categories: [ Jekyll, tutorial ]
-image: assets/images/5.jpg
-featured: true
----
-</pre>
+### Local Setup
 
-YAML Page Example
-<pre>
----
-layout: page
-title: Mediumish Template for Jekyll
-comments: true
----
-</pre>
+```
+bundle install # Install Jekyll, Github Pages gems
+npm install # Install Gulp and dependences
+gulp # Build, test, serve and watch your local setup
+```
 
-### Copyright
+IMPORTANT: Edit **_config.yml** -> "API Keys" section to replace OpenTheme keys with your own
 
-Copyright (C) 2018 WowThemes.net.
+Optionally edit **gulpfile.js** -> BrowserSync host, port to your local setup
 
-**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. If this project helps you reduce time to develop or you want to remove the attribution, you can give me a cup of coffee :)
+Optionally, helper bash scripts available in **/scripts** folder. Use **shove.sh** to push changes to your repo. Use **clone.sh** to copy changes to GitHub Pages.
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.me/wowthemes/5)
+## File Structure
 
+### Folders Pre-processed by GitHub Pages / Jekyll
 
------------------
+- **_includes** html partials reusable in layouts.
+- **_layouts** html layouts reusable in pages. 
+- **_posts** Post types organized by folder. **apps** contains single page apps. **blog** contains blog posts.
+- **_data** Static data files including YAML Front Matter, CSV, JSON formats usable by GitHub Pages sites.
 
-[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)
+### Asset Folders
+
+- **js** add site specific JavaScript to custom.js. Vendor libraries are added as minified where available.
+- **css** add site specific CSS to custom.css. Vendor libraries are added as minified where available. Contains folders for assets referenced by custom or vendor css.
+- **img** image assets.
+
+### Development Automation
+
+- **script** Automation shell scripts for development, testing. [TO DO] Replace with Gulp pipeline automation, E2E, Lint tests.
+
+### Files
+
+- **Gemfile** defines gems required for creating local Jekyll building and serving "like" how GitHub Pages would.
+
+## Dependencies
+
+- Semantic UI
+- Jekyll
+
+## Reference Projects
+
+Study following projects for best practices.
+
+### Jekyll built sites and themes
+
+- [Jekyll website](http://jekyllrb.com/)
+- GitHub Pages themes
+- [Lanyon](https://github.com/poole/lanyon)
+- [Jekyll Themes](http://jekyllthemes.org/)
+
+### GitHub hosted sites
+
+- [Semantic UI website](http://www.semantic-ui.com)
