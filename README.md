@@ -1,115 +1,77 @@
-Unfortunately, this project is **no longer maintained**.
+# Lagom
 
-I now have other priorities in my life and no longer have time to update this library. Email me at elle.kasai@gmail.com if you'd like to reach me.
+> #### *Lagom* is a Swedish word with no direct English equivalent, meaning "just the right amount"
 
-# :briefcase: ResumeCards :briefcase:
+Lagom, a [Jekyll][j] blog theme with just the right amount of style. 
 
-ResumeCards is a Markdown based resume generator. It looks great on mobile/desktop and can be saved as PDF.
-
-## :briefcase: Live Demo :briefcase:
-
-### [View Demo and Documentation](http://ellekasai.github.io/resumecards)
-
-![](http://cl.ly/image/3O342N0b0y1h/sample_default.png)
-
-You can save it as PDF too:
-
-![](http://cl.ly/image/091w0b0M2S3G/resume_print_preview.png)
-
-## :briefcase: Installation :briefcase:
-
-**Note:** ResumeCards uses Jekyll. Please read [Jekyll's documentation](http://jekyllrb.com/) if you get stuck.
-
-[Fork this repo](http://github.com/ellekasai/resumecard/fork), clone it, and then run:
-
-```
-bundle install
-```
-
-...which installs `github-pages` gem. After that, run the server:
-
-```
-jekyll serve --watch
-```
-### Warning
-
-* Once the server is started, you must go to [http://localhost:4000/resumecards/](http://localhost:4000/resumecards/), since `baseurl` is set as `"/resumecards"` initially. To use  http://localhost:4000/, change `baseurl` in `_config.yml` to `""` .
-
-## :briefcase: Usage :briefcase:
-
-### Editing Your Resume
-
-Edit `_posts/card-[1-9].md` like this:
-
-```markdown
----
-type: "Work Experience"
-heading: "Bizreach"
-subheading: "Junior Product Designer"
-duration: "October 2013 – September 2014 (1 year)"
-location: "Tokyo, Japan"
----
-
-Write in markdown here...
-```
-
-If you don't need some of the metadata, just remove them:
-
-```markdown
----
-type: "Work Experience"
-heading: "Bizreach"
----
-```
-
-### Other Files to Modify
-
-You **should** change these files before deploying:
-
-* `_config.yml`: You must change `baseurl`and `url`.
-  * Make sure to restart the server after you update `_config.yml`.
-* `_data/resume.yml`: You must change `photo`, `name` and `url`. Also, you must set `demo` to `false` to hide everything but your resume.
-* `CNAME`: Change this to host ResumeCards on a custom domain.
-* `README.md`: Write your own README!
-* `_includes/script.html`: Extra stuff before the `</body>` tag. Change or remove the default Google Analytics code.
-* `_includes/nav.html`: Modify or remove your contact links.
-
-### Customize the Theme
-
-To customize the color theme, edit the `color` section of `_data/resume.yml`.
-
-#### Red
-![](http://cl.ly/image/0Q442g393E0O/sample_red.png)
-
-#### Pink
-![](http://cl.ly/image/2r0d3C201Q2y/sample_pink.png)
-
-#### Brown
-![](http://cl.ly/image/1A3p0v2n2I2O/sample_brown.png)
-
-#### Blue
-![](http://cl.ly/image/102r3e1y010w/sample_blue.png)
-
-#### Purple
-![](http://cl.ly/image/130Y2y1X1228/sample_purple.png)
-
-#### Teal
-![](http://cl.ly/image/3L042k3L3i2m/sample_teal.png)
-
-#### Green
-![](http://cl.ly/image/031u3a070V3f/sample_green.png)
-
-## :briefcase: Author & License :briefcase:
-
-Elle Kasai
-
-- [Website](http://ellekasai.com/about)
-- [Twitter](http://twitter.com/ellekasai)
-
-[MIT License](http://ellekasai.mit-license.org).
-
-## :briefcase: Special Thanks :briefcase:
-
-* [Shu Uesugi](http://github.com/chibicode) - for the guidance on this project.
+Extracted lovingly from [http://mdswanson.com][mds] for your enjoyment!
 
 
+
+* Responsive, based on [Skeleton][skeleton]
+* [Font Awesome][font-awesome] for icons
+* Open Sans from [Google web fonts][gfonts]
+* Built-in Atom feed
+
+[![Live Demo](https://img.shields.io/badge/view-live--demo-blue.svg?style=flat-square)](http://lagom.mdswanson.com/)
+
+## Action Shots
+![](http://i.imgur.com/Pmzk4j1.png)
+![](http://i.imgur.com/CT2Xvug.png)
+![](http://i.imgur.com/XisjqW1.jpg)
+
+## Installation
+
+- [Fork this repository][fork]
+- Clone it: `git clone https://github.com/YOUR-USER/lagom`
+- Install the [GitHub Pages gem][pages] (includes Jekyll): `bundle install`
+- Run the jekyll server: `jekyll serve`
+
+You should have a server up and running locally at <http://localhost:4000>.
+
+## Customization
+
+Next you'll want to change a few things. Most of them can be changed directly in
+[theme.yml][config]. That's where you can add your social links, change the accent
+color, stuff like that.
+
+There's a few other places that you'll want to change, too:
+
+- [CNAME][cname]: If you're using this on GitHub Pages with a custom domain name, 
+  you'll want to change this to be the domain you're going to use. All that should 
+  be in here is a domain name on the first line and nothing else (like: `example.com`).
+- [favicon.png][favicon]: This is the icon in your browser's address bar. You should 
+  change it to whatever you'd like.
+- [logo.png][logo]: A square-ish image that appears in the upper-left corner
+
+## Deployment
+
+You should deploy with [GitHub Pages][pages] - it's just easier.
+
+All you should have to do is rename your repository on GitHub to be
+`username.github.io`. Since everything is on the `gh-pages` branch, you
+should be able to see your new site at <http://username.github.io>.
+
+## Licensing
+
+[MIT](https://github.com/swanson/lagom/blob/master/LICENSE) with no
+added caveats, so feel free to use this on your site without linking back to
+me or using a disclaimer or anything silly like that.
+
+## Contact
+I'd love to hear from you at [@_swanson][twitter]. Feel free to open issues if you
+run into trouble or have suggestions. Pull Requests always welcome.
+
+[j]: http://jekyllrb.com/
+[mds]: http://mdswanson.com
+[skeleton]: http://www.getskeleton.com/
+[font-awesome]: http://fortawesome.github.io/Font-Awesome/
+[gfonts]: http://www.google.com/fonts/specimen/Open+Sans
+[fork]: https://github.com/swanson/lagom/fork
+[config]: https://github.com/swanson/lagom/blob/master/_data/theme.yml
+[cname]: https://github.com/swanson/lagom/blob/master/CNAME
+[favicon]: https://github.com/swanson/lagom/blob/master/favicon.png
+[logo]: https://github.com/swanson/lagom/blob/master/logo.png
+[pages]: http://pages.github.com
+[twitter]: https://twitter.com/_swanson
+[pages]: https://github.com/github/pages-gem
