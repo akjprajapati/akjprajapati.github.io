@@ -1,85 +1,17 @@
+---
+layout: compress
+layout: default
+comments: true
+# other options
+---
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
+  {% include head.html %}
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <!---
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-          --->
-        <nav id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              {% assign links = site.data.navigation %}
-              {% for link in links %}
-                {% assign class = nil %}
-                {% if page.url contains link.url %}
-                  {% assign class = 'active' %}
-                {% endif %}
-                {% if link.sublinks %}
-                    <li class="dropdown {{ class }}">
-                      <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                          {% for sublink in link.sublinks %}
-                              {% if sublink.title == 'separator' %}
-                                  <li role="separator" class="divider"></li>
-                              {% else %}
-                                  <li>
-                                    <a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
-                                  </li>
-                              {% endif %}
-                          {% endfor %}
-                      </ul>
-                    </li>
-                {% else %}
-                <li class="{{ class }}">
-                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
-
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
+    <main class="wrapper">
+      {% include header.html %}
       {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
+      {% include footer.html %}
+    </main>
   </body>
 </html>
