@@ -235,10 +235,10 @@ a:active {
   }
 
 /*====================================================
-                   PORTFOLIO
+                   PROJECTS
 ======================================================*/
 
-#portfolio{
+#projects{
     padding:100px 0;
 }
 
@@ -251,12 +251,12 @@ a:active {
     margin:5px 2px;
 }
 
-#portfolio .portfolio-item {
+#projects .projects-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#projects .projects-item .projects-link {
     position: relative;
     display: block;
     max-width: 400px;
@@ -264,7 +264,7 @@ a:active {
     cursor: pointer;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port {
+#projects .projects-item .projects-link .caption-port {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -275,11 +275,11 @@ a:active {
     background: rgba(54, 160, 245, 0.73);
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port:hover {
+#projects .projects-item .projects-link .caption-port:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content {
+#projects .projects-item .projects-link .caption-port .caption-port-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -290,26 +290,26 @@ a:active {
     color: white;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content i {
+#projects .projects-item .projects-link .caption-port .caption-port-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content h3,
-#portfolio .portfolio-item .portfolio-link .caption-port .caption-port-content h4 {
+#projects .projects-item .projects-link .caption-port .caption-port-content h3,
+#projects .projects-item .projects-link .caption-port .caption-port-content h4 {
     margin: 0;
 }
 
-#portfolio * {
+#projects * {
     z-index: 2;
 }
 
 @media (min-width: 767px) {
-    #portfolio .portfolio-item {
+    #projects .projects-item {
         margin: 0 0 30px;
     }
 }
 
-.portfolio-modal .modal-dialog {
+.projects-modal .modal-dialog {
     max-width: 100%;
     min-height: 100%;
     margin: 0;
@@ -322,30 +322,30 @@ a:active {
     box-shadow: none;
 }
 
-.portfolio-modal .title-bar {
+.projects-modal .title-bar {
     padding: 0 0 50px 0;
 }
 
-.portfolio-modal .title-bar h1{
+.projects-modal .title-bar h1{
     visibility: initial;
     animation-name: initial;
 }
 
-.portfolio-modal .modal-dialog .modal-content {
+.projects-modal .modal-dialog .modal-content {
     padding: 10px 0 100px 0;
     border: 0;
     border-radius: 0;
 }
 
-.portfolio-modal .modal-dialog .modal-content img {
+.projects-modal .modal-dialog .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-dialog .modal-content .item-details {
+.projects-modal .modal-dialog .modal-content .item-details {
     margin: 30px 0;
 }
 
-.portfolio-modal .close-modal {
+.projects-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -355,11 +355,11 @@ a:active {
     background-color: transparent;
 }
 
-.portfolio-modal .close-modal:hover {
+.projects-modal .close-modal:hover {
     opacity: 0.3;
 }
 
-.portfolio-modal .close-modal .lr {
+.projects-modal .close-modal .lr {
     /* Safari and Chrome */
     z-index: 1051;
     width: 1px;
@@ -372,7 +372,7 @@ a:active {
     background-color: #2C3E50;
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.projects-modal .close-modal .lr .rl {
     /* Safari and Chrome */
     z-index: 1052;
     width: 1px;
@@ -384,13 +384,13 @@ a:active {
     background-color: #2C3E50;
 }
 
-.portfolio-modal .modal-backdrop {
+.projects-modal .modal-backdrop {
     display: none;
     opacity: 0;
 }
 
 @media (max-width: 850px){
-    .portfolio-modal .close-modal{
+    .projects-modal .close-modal{
         display: none;
     }
 }
