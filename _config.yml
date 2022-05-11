@@ -50,7 +50,7 @@ about_profile_image: images/akjprajapati.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name's Ashish and I'm a DevOps Engineer. I've total 11 years of IT Experience. I have worked at a number of companies gaining teamwork and leadership skills.
 
-  I am most skilled in: <mark>AWS</mark> <mark>Linux</mark> <mark>Bash</mark> <mark>Terraform</mark> <mark>Ansible</mark> <mark>Jenkins</mark> <mark>Docker</mark>, <mark>Kubernetes</mark>
+  I am most skilled in: <mark>AWS</mark> <mark>Linux</mark> <mark>Bash</mark> <mark>Terraform</mark> <mark>Ansible</mark> <mark>Jenkins</mark> <mark>Docker</mark> <mark>Kubernetes</mark>
 
 content:
   - title: PROJECTS # Title for the section
