@@ -91,16 +91,16 @@ content:
         quote: >
           
         description: | # this will include new lines to allow paragraphs
-            Roles and responsibilities—
+            Roles and responsibilities:
 
-                ➢ Automating the infra provisioning using terraform for AWS, GCP and Azure cloud platforms.
-                ➢ Automating tasks using ansible playbooks and bash / python scripts.
-                ➢ Working on serverless projects which involve lambda and serverless framework.
+                - Automating the infra provisioning using terraform for AWS, GCP and Azure cloud platforms.
+                - Automating tasks using ansible playbooks and bash / python scripts.
+                - Working on serverless projects which involve lambda and serverless framework.
             Projects—
             
-                ➢ Modularization of the terraform code.
-                ➢ Implementation of terraform for Kubernetes resource creation on cloud platforms.
-                ➢ Implementation of packer and ansible provisioner with terraform.
+                - Modularization of the terraform code.
+                - Implementation of terraform for Kubernetes resource creation on cloud platforms.
+                - Implementation of packer and ansible provisioner with terraform.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
