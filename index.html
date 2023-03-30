@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -16,16 +20,16 @@
             margin: 0 auto;
             padding: 20px;
             max-width: 972px;
-            border-bottom: 7px solid #fff;
+            /* border-bottom: 7px solid #fff; */
         }
 
         #profile-image {
             border-radius: 50%;
             width: 279px;
             height: 279px;
-            margin: 90px auto 0;
+            margin: 27px auto 0;
             display: block;
-            background-image: url("_resources_/images/akjprajapati.jpg");
+            background-image: url("_resources_/img/akjprajapati.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -55,7 +59,7 @@
         h3 {
             color: #49309A;
             margin-top: 30px;
-            border-bottom: 1px solid #902070;
+            /* border-bottom: 3px solid #902070; */
         }
 
         p {
@@ -92,18 +96,20 @@
             vertical-align: middle;
         }
 
+        .jumbotron {
+            margin-top: 1px;
+        }
+ 
+        .jumbotron p {
+             color: #fff; /* Change this to the desired text color */
+        }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="profile-image"></div>
         <h1>Ashish Kumar</h1>
-        
         <h2>Ramgarh, Jharkhand, Bharat</h2>
-        <!-- <p>I'm a devsecops engineer for last 10 years. I've served as individual contributor, team player and also as technical lead roles in my career.</p> -->
-
-        <!-- <h3>Linux, AWS, GCP, Azure, Ansible, Terraform, Jenkins, Bash, Python, Kubernetes, Grafana, Prometheus.</h3> -->
-        
         <ul class="social-icons">
             <li><a href="https://www.facebook.com/akjprajapati" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://twitter.com/akjprajapati" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -111,8 +117,18 @@
             <li><a href="https://www.youtube.com/@akjprajapati" target="_blank"><i class="fab fa-youtube"></i></a></li>
             <li><a href="https://www.linkedin.com/in/akjprajapati" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://github.com/akjprajapati" target="_blank"><i class="fab fa-github"></i></a></li>
+            <hr>
         </ul>
-
+    </div>
+    <div class="jumbotron" style="background-color: #ff9933;">
+        <div class="container">
+          <p class="lead">I'm an I.T. professional since 2011. I've worked for mutiple organizations contributing to thier team efforts and I've lead teams for them as well. I'm in leadership roles since 2018.</p>
+          <hr>
+        <p class="lead">I'm skilled in: Linux, AWS, GCP, Azure, Ansible, Terraform, Jenkins, Bash, Python, Docker, Kubernetes, Grafana, Prometheus, MySQL, Postgresql, Snyk, OWASP ZAP.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="_resources_/files/AshishKumar_DevSecOps.pdf" role="button" target="_blank">Download My Resume</a>
+          </p>
+        </div>
     </div>
 </body>
 </html>
